@@ -1,35 +1,86 @@
 $introparency:0.13;
 $fullwidth:100%;
+$textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 
-@media (min-width: 1200px){
-  .jumbotron {
-    background-image:url("../images/Intro_1300.gif");
-    height: 325px;
+
+.well{
+  box-shadow: 0px 2px 15px 0px rgba(7,7,7, 0.08);;
+  background-color:white;
+  h3{
+    opacity:100;
+  }
+}
+
+
+.nav navbar-nav{
+  float:pull-right;
+}
+
+@media (min-width:1300px){
+  .bg{
+    background-image:url("../images/Intro_2k.gif");
     width:$fullwidth;
+    height: 500px;
+  }
+  .jumbotron {
+    //height: 500px;
+    color: white;
+    text-shadow: $textshadowprops;
+    background:transparent;
 
     #pronounced{
       float:right;
-      color:white;
+      color:black;
       opacity:$introparency;
-      padding-top:220px;
-      margin-right:-40px;
+      font-size:45px;
+      margin-top:-4%;
+
     }
   }
 }
 
-@media (max-width:1199px){
-  .jumbotron {
-    background-image:url("../images/Intro_1k.gif");
-    height: 250px;
+
+
+
+@media (max-width:1299px){
+  .bg{
+    background-image:url("../images/Intro_1300.gif");
     width:$fullwidth;
+    height: 325px;
+  }
+  .jumbotron {
+    //height: 325px;
+    color: white;
+    text-shadow: $textshadowprops;
+    background:transparent;
 
     #pronounced{
       float:right;
-      color:white;
-      font-size:22px;
+      color:black;
       opacity:$introparency;
-      padding-top:145px;
-      margin-right:10px;
+      margin-top:-4%;
+    }
+  }
+}
+
+@media (max-width:1000px){
+  .bg{background-image:url("../images/Intro_1k.gif");
+    height: 250px;
+    width:$fullwidth;
+  }
+  .jumbotron {
+    //height: 250px;
+    color: white;
+    text-shadow: $textshadowprops;
+    background:transparent;
+
+    #pronounced{
+      float:right;
+      color:black;
+      font-size:26px;
+      opacity:$introparency;
+      margin-top:-4%;
+    
     }
   }
 }
@@ -38,35 +89,49 @@ $fullwidth:100%;
 
 
 @media (max-width:732px){
-  .jumbotron {
+  .bg{
     background-image:url("../images/Intro_700.gif");
-    height: 175px;
     width:$fullwidth;
+    height:175px;
+  }
+  .jumbotron {
+    //height: 175px;
+    color: white;
+    text-shadow: $textshadowprops;
+    background:transparent;
+    
     #pronounced{
       float:right;
-      color:white;
+      color:black;
       font-size:22px;
       opacity:$introparency;
-      padding-top:90px;
-      margin-right:18px;
+      margin-top:-5%;
+
     }
   }
 }
 
 
 @media (max-width:500px){
-  .jumbotron {
+  .bg{
     background-image:url("../images/Intro_500.gif");
-    height: 125px;
     width:$fullwidth;
+    height:125px;
+  }
+  .jumbotron {
+    
+    //height: 125px;
+    color:white;
+    text-shadow: $textshadowprops;
+    background:transparent;
 
     #pronounced{
       float:right;
-      color:white;
-      font-size:12px;
+      color:black;
+      font-size:16px;
       opacity:$introparency;
-      padding-top:55px;
-      margin-right:10px;
+      margin-top:-5%;
+
     }
   }
 }
