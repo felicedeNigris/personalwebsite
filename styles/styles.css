@@ -1,0 +1,49 @@
+@media (min-width: 1200px) {
+  .jumbotron {
+    background-image: url("../images/Intro_1300.gif");
+    height: 325px;
+    width: 100%; }
+    .jumbotron #pronounced {
+      float: right;
+      color: white;
+      opacity: 0.13;
+      padding-top: 220px;
+      margin-right: -40px; } }
+@media (max-width: 1199px) {
+  .jumbotron {
+    background-image: url("../images/Intro_1k.gif");
+    height: 250px;
+    width: 100%; }
+    .jumbotron #pronounced {
+      float: right;
+      color: white;
+      font-size: 22px;
+      opacity: 0.13;
+      padding-top: 145px;
+      margin-right: 10px; } }
+@media (max-width: 732px) {
+  .jumbotron {
+    background-image: url("../images/Intro_700.gif");
+    height: 175px;
+    width: 100%; }
+    .jumbotron #pronounced {
+      float: right;
+      color: white;
+      font-size: 22px;
+      opacity: 0.13;
+      padding-top: 90px;
+      margin-right: 18px; } }
+@media (max-width: 500px) {
+  .jumbotron {
+    background-image: url("../images/Intro_500.gif");
+    height: 125px;
+    width: 100%; }
+    .jumbotron #pronounced {
+      float: right;
+      color: white;
+      font-size: 12px;
+      opacity: 0.13;
+      padding-top: 55px;
+      margin-right: 10px; } }
+
+/*# sourceMappingURL=styles.css.map */

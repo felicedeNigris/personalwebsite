@@ -1,0 +1,74 @@
+$introparency:0.13;
+$fullwidth:100%;
+
+@media (min-width: 1200px){
+  .jumbotron {
+    background-image:url("../images/Intro_1300.gif");
+    height: 325px;
+    width:$fullwidth;
+
+    #pronounced{
+      float:right;
+      color:white;
+      opacity:$introparency;
+      padding-top:220px;
+      margin-right:-40px;
+    }
+  }
+}
+
+@media (max-width:1199px){
+  .jumbotron {
+    background-image:url("../images/Intro_1k.gif");
+    height: 250px;
+    width:$fullwidth;
+
+    #pronounced{
+      float:right;
+      color:white;
+      font-size:22px;
+      opacity:$introparency;
+      padding-top:145px;
+      margin-right:10px;
+    }
+  }
+}
+
+
+
+
+@media (max-width:732px){
+  .jumbotron {
+    background-image:url("../images/Intro_700.gif");
+    height: 175px;
+    width:$fullwidth;
+    #pronounced{
+      float:right;
+      color:white;
+      font-size:22px;
+      opacity:$introparency;
+      padding-top:90px;
+      margin-right:18px;
+    }
+  }
+}
+
+
+@media (max-width:500px){
+  .jumbotron {
+    background-image:url("../images/Intro_500.gif");
+    height: 125px;
+    width:$fullwidth;
+
+    #pronounced{
+      float:right;
+      color:white;
+      font-size:12px;
+      opacity:$introparency;
+      padding-top:55px;
+      margin-right:10px;
+    }
+  }
+}
+
+
