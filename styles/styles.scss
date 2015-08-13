@@ -3,22 +3,58 @@ $fullwidth:100%;
 $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 
 
-.well{
+/* REMOVE ROUND EDGES FROM WELLS */ 
+ .well{
+  border-radius:0px;
+}
+
+body{
+  #navigation{
+    float:right;
+    margin-right:5%;
+  }
+  overflow-x: hidden;
+
+}
+
+#home{
+  .well{
+     h2{
+      text-align: center;
+      margin-left:25%;
+      margin-right:25%;
+    }
+  }
+}
+
+#services {
+
+  .well{
+
   box-shadow: 0px 2px 15px 0px rgba(7,7,7, 0.08);;
-  background-color:white;
+  background-image:url("../images/Wallpaper.png");
+  background-repeat: no-repeat;
+  padding-bottom:10%;
+  background-position: center center;
+  background-attachment:fixed;
+  height:700px;
+  padding-top:5%;
+
   h3{
-    opacity:100;
+    text-align: center;
+  }
   }
 }
 
 
-.nav navbar-nav{
-  float:pull-right;
+ul{
+  position-right:50px;
 }
 
 @media (min-width:1300px){
   .bg{
     background-image:url("../images/Intro_2k.gif");
+    background-repeat: no-repeat;
     width:$fullwidth;
     height: 500px;
   }
@@ -45,6 +81,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 @media (max-width:1299px){
   .bg{
     background-image:url("../images/Intro_1300.gif");
+    background-repeat: no-repeat;
     width:$fullwidth;
     height: 325px;
   }
@@ -64,7 +101,9 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 }
 
 @media (max-width:1000px){
-  .bg{background-image:url("../images/Intro_1k.gif");
+  .bg{
+    background-image:url("../images/Intro_1k.gif");
+    background-repeat: no-repeat;
     height: 250px;
     width:$fullwidth;
   }
@@ -91,6 +130,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 @media (max-width:732px){
   .bg{
     background-image:url("../images/Intro_700.gif");
+    background-repeat: no-repeat;
     width:$fullwidth;
     height:175px;
   }
@@ -115,6 +155,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 @media (max-width:500px){
   .bg{
     background-image:url("../images/Intro_500.gif");
+    background-repeat: no-repeat;
     width:$fullwidth;
     height:125px;
   }
