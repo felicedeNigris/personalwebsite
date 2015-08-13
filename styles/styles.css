@@ -2,16 +2,18 @@
 .well {
   border-radius: 0px; }
 
-body {
-  overflow-x: hidden; }
-  body #navigation {
-    float: right;
-    margin-right: 5%; }
+.workdiv {
+  color: red;
+  height: 300px; }
 
-#home .well h2 {
-  text-align: center;
-  margin-left: 25%;
-  margin-right: 25%; }
+#home .welly {
+  margin-bottom: 40px;
+  background-image: none;
+  background-color: rgba(127, 127, 127, 0); }
+  #home .welly h2 {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%; }
 
 #services .well {
   box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
@@ -20,6 +22,7 @@ body {
   padding-bottom: 10%;
   background-position: center center;
   background-attachment: fixed;
+  background-size: cover;
   height: 700px;
   padding-top: 5%; }
   #services .well h3 {
@@ -29,7 +32,14 @@ ul {
   position-right: 50px; }
 
 @media (min-width: 1300px) {
+  body {
+    overflow-x: hidden; }
+    body #navigation {
+      float: right;
+      margin-right: 5%; }
+
   .bg {
+    margin-top: 8%;
     background-image: url("../images/Intro_2k.gif");
     background-repeat: no-repeat;
     width: 100%;
@@ -46,11 +56,18 @@ ul {
       font-size: 45px;
       margin-top: -4%; } }
 @media (max-width: 1299px) {
+  body {
+    overflow-x: hidden; }
+    body #navigation {
+      float: right;
+      margin-right: 5%; }
+
   .bg {
     background-image: url("../images/Intro_1300.gif");
     background-repeat: no-repeat;
     width: 100%;
-    height: 325px; }
+    height: 325px;
+    margin-top: 10%; }
 
   .jumbotron {
     color: white;
@@ -62,11 +79,20 @@ ul {
       opacity: 0.13;
       margin-top: -4%; } }
 @media (max-width: 1000px) {
+  body {
+    overflow-x: hidden; }
+    body #navigation {
+      display: inline-flex;
+      padding: 0px;
+      margin: 0px; }
+
   .bg {
     background-image: url("../images/Intro_1k.gif");
     background-repeat: no-repeat;
     height: 250px;
-    width: 100%; }
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 10%; }
 
   .jumbotron {
     color: white;
@@ -79,11 +105,17 @@ ul {
       opacity: 0.13;
       margin-top: -4%; } }
 @media (max-width: 732px) {
+  #navigation {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px; }
+
   .bg {
     background-image: url("../images/Intro_700.gif");
     background-repeat: no-repeat;
     width: 100%;
-    height: 175px; }
+    height: 175px;
+    margin-top: 10%; }
 
   .jumbotron {
     color: white;
@@ -96,11 +128,19 @@ ul {
       opacity: 0.13;
       margin-top: -5%; } }
 @media (max-width: 500px) {
+  #navigation {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+    resize: 50%;
+    font-size: .9em; }
+
   .bg {
     background-image: url("../images/Intro_500.gif");
     background-repeat: no-repeat;
     width: 100%;
-    height: 125px; }
+    height: 125px;
+    margin-top: 20%; }
 
   .jumbotron {
     color: white;

@@ -8,21 +8,22 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
   border-radius:0px;
 }
 
-body{
-  #navigation{
-    float:right;
-    margin-right:5%;
-  }
-  overflow-x: hidden;
-
+.workdiv{
+  color:red;
+  height:300px;
 }
 
+
 #home{
-  .well{
+  .welly{
+    margin-bottom:40px;
+    background-image:none;
+    background-color:rgba(127,127,127,0);
      h2{
       text-align: center;
       margin-left:25%;
       margin-right:25%;
+
     }
   }
 }
@@ -37,8 +38,10 @@ body{
   padding-bottom:10%;
   background-position: center center;
   background-attachment:fixed;
+  background-size:cover;
   height:700px;
   padding-top:5%;
+  //margin-top:-10%;
 
   h3{
     text-align: center;
@@ -52,7 +55,17 @@ ul{
 }
 
 @media (min-width:1300px){
+
+  body{
+  #navigation{
+    float:right;
+    margin-right:5%;
+  }
+  overflow-x: hidden;
+  }
+
   .bg{
+    margin-top:8%;
     background-image:url("../images/Intro_2k.gif");
     background-repeat: no-repeat;
     width:$fullwidth;
@@ -79,11 +92,21 @@ ul{
 
 
 @media (max-width:1299px){
+
+  body{
+  #navigation{
+    float:right;
+    margin-right:5%;
+  }
+  overflow-x: hidden;
+  }
+
   .bg{
     background-image:url("../images/Intro_1300.gif");
     background-repeat: no-repeat;
     width:$fullwidth;
     height: 325px;
+    margin-top:10%;
   }
   .jumbotron {
     //height: 325px;
@@ -101,11 +124,23 @@ ul{
 }
 
 @media (max-width:1000px){
+
+   body{
+    #navigation{
+    display:inline-flex;
+    padding:0px;
+    margin:0px;
+  }
+  overflow-x: hidden;
+  }
+
   .bg{
     background-image:url("../images/Intro_1k.gif");
     background-repeat: no-repeat;
     height: 250px;
     width:$fullwidth;
+    padding-top:50px;
+    margin-top: 10%;
   }
   .jumbotron {
     //height: 250px;
@@ -128,11 +163,18 @@ ul{
 
 
 @media (max-width:732px){
+  #navigation{
+    display:inline-flex;
+    padding:0px;
+    margin:0px;
+  }
+
   .bg{
     background-image:url("../images/Intro_700.gif");
     background-repeat: no-repeat;
     width:$fullwidth;
     height:175px;
+    margin-top:10%;
   }
   .jumbotron {
     //height: 175px;
@@ -153,11 +195,22 @@ ul{
 
 
 @media (max-width:500px){
+
+  #navigation{
+    display:inline-flex;
+    padding:0px;
+    margin:0px;
+    resize: 50%;
+    font-size:.9em;
+  }
+
   .bg{
     background-image:url("../images/Intro_500.gif");
     background-repeat: no-repeat;
     width:$fullwidth;
     height:125px;
+    //padding-top:90%;
+    margin-top:20%;
   }
   .jumbotron {
     
