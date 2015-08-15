@@ -69,6 +69,19 @@ jQuery(document).ready(function($){
       $("#photography-li").addClass("active");
     }
   });
+
+
+
+//Play Gif on Hovers
+
+$(function(){
+    $('#bg').on( 'mouseenter', function() {
+         $(this).toggleClass('animated', 'static');
+    })
+})
+
+
+
 });
 
 

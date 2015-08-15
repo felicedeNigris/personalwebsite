@@ -1,6 +1,9 @@
+// Sass Global Variables
+
 $introparency:0.13;
 $fullwidth:100%;
 $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
+
 
 
 /* REMOVE ROUND EDGES FROM WELLS */ 
@@ -8,12 +11,15 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
   border-radius:0px;
 }
 
+
+
+// WORK DIV Filler styles to  See if its all there//
 .workdiv{
   color:red;
   height:300px;
 }
 
-
+// HOME DIV
 #home{
   .welly{
     margin-bottom:40px;
@@ -22,12 +28,14 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
      h2{
       text-align: center;
       margin-left:25%;
-      margin-right:25%;
+      margin-right:25%
 
     }
   }
 }
 
+
+/* ////////////// SERVICES STYLING /////////////////*/
 #services {
 
   .well{
@@ -43,16 +51,28 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
   padding-top:5%;
   //margin-top:-10%;
 
-  h3{
-    text-align: center;
-  }
-  }
-}
+    h3{
+      text-align: center;
+    }
+    .panel-body{
+      text-align: center;
+      img{
+      display:inline-block;
+      float:center;
+      width:22%;
+      height:auto;
+      }
+    }
+  }// END WELL CLASS CLOSURE
+}// END SERVICES CLOSURE
 
-
+//NAV BAR POSITIONING
 ul{
   position-right:50px;
 }
+
+
+///////////////////MEDIA QUERY FOR GIF /////////////////////
 
 @media (min-width:1300px){
 
@@ -87,9 +107,6 @@ ul{
     }
   }
 }
-
-
-
 
 @media (max-width:1299px){
 
@@ -158,9 +175,6 @@ ul{
     }
   }
 }
-
-
-
 
 @media (max-width:732px){
   #navigation{
