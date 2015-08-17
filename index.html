@@ -2,18 +2,19 @@
 <html>
 
   <head>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.1.0/jquery.waypoints.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css"/><!--///// CSS /////-->
+    <link data-require="animate.css@*" data-semver="3.2.0" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" /> <!--////// ANIMATE.CSS /////////-->
     <script src="/scripts/scripts.js"></script>
   </head>
 
   <body>
     <!--//////// NAVBAR START /////////////-->
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top animated bounce">
       <div class="container-fluid">
         <ul class="nav navbar-nav" id='navigation'>
           <li class="active" id="home-li">
@@ -52,8 +53,8 @@
 
 
       <div class="row">
-          <div class="welly">
-            <img src="images/Me.jpg" class="img-circle center-block"/>
+          <div class="welly" id="meWell">
+            <img id="avatar" src="images/Me.jpg" class="img-circle center-block"/>
                 <h2 class="lead"> Multi Media Designer/Developer working at a Fortune 5. I offer my abilities to create stunning web apps, animations, and imagery that makes you drool. Hire me for freelance or full-time Front-End or Animated GIF projects.
             </h2>
           </div>
@@ -61,8 +62,6 @@
 
 
     </div><!-- END Container  -->
-
-
 
 
     <!-- //////////////////////////////////////////////-->
@@ -74,11 +73,11 @@
       <div class="row" id="services">
 
 
-        <div class="well"><span>
+        <div class="well" id="services-wall"><span>
 
 
           <div class="col-sm-6.col-sm-4">
-            <div class="panel panel-default">
+            <div class="panel panel-default well-zero">
               <div class="panel-heading">
                 <h3 class="panel-title">My Services</h3>
               </div>
@@ -104,29 +103,49 @@
 
 
 
-
-
-
     <!-- //////////////////////////////////////////////-->
     <!-- //////////// WORK SECTION ////////////////////-->
+
+
     <div class="container-fluid">
 
       <div class="row" id="work">
+        <h2 id="myWork">My Work</h2>
           <div class="welly">
-            <div class="workdiv"></div>
+            <div class="workdiv">
+              <ul class="list-group">
+                <li class="list-group-item">Web Dev Work
+                  <ul>
+                    <li class="list-group-item"><a href="https://developer.mozilla.org">Bloc Jams</a></li>
+                    <li class="list-group-item">Self Destructing Task Timer</li>
+                    <li class="list-group-item">Task List</li>
+                  </ul>
+                </li class="list-group-item"><!-- //////////END WEB DEV WORK /////////////////-->
+                <li class="list-group-item">Design/Animation
+                  <ul>
+
+                  </ul>
+              </ul> <!-- /////// END LIST GROUP //////////////-->
+            </div>
           </div>
       </div> <!-- End Row -->
 
 
     </div><!-- END Container  -->
+
+
     <!-- ///////////////////////////////////////////////////////////////////////////-->
     <!-- ////////////////////////// PHOTOGRAPHY GALLERY ///////////////////////////-->
     
     <div class="container-fluid" id="photography">
+      <div class="photocontainer well-zero">
         <div class="row"> <!-- 1 -->
 
-          <h2>My Photos</h2> <!-- My Photos HEADER -->
-
+          <h2 id="myPhotos">My Photos</h2> <!-- My Photos HEADER -->
+          <br>
+          <br>
+          <br>
+          <br>
           <div class='col-md-3'>
             <a data-flickr-embed="true"  href="https://www.flickr.com/photos/felideni/19677379024/in/dateposted-public/" title="Beware of the roach!"><img src="https://farm1.staticflickr.com/407/19677379024_82887b2179_m.jpg" width="240" height="180" alt="Beware of the roach!"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
           </div>
@@ -316,11 +335,16 @@
           </div>
           
         </div><!--///////////////// END ROW //////////////////////-->
-              
+      </div> <!-- ///////////////////// END PHOTO CONTAINER /////////////////////////-->        
     </div> <!-- ////////////////////////END CONTAINER IMAGE GALLERY //////////////////-->
 
     <!--//////////////////////////////////////////////////////////////////////////////-->
-
+    <footer>
+      <div class="container-fluid">
+        <p>©felicedenigris.com 2015</p>
+        <p>Developed by Felice DeNigris 👋≧◉ᴥ◉≦</p>
+      </div><!-- END CONTAINER -->
+    </footer>
   </body>
 
 </html>

@@ -4,6 +4,56 @@
 
 jQuery(document).ready(function($){
 
+
+  ////////////////////////////////// Waypoints NAVBAR SCROLL DOWN OPACITY
+
+  $('#meWell').waypoint(function(direction){ //when Home area is in focus
+    //console.log("Hello");
+    if(direction === 'down'){
+      $('.navbar.navbar-default.navbar-fixed-top.animated.bounce').addClass('fiftypacity');
+      console.log("Waypoints navbar 50% opacity triggered.");
+    }
+    if(direction === 'up'){
+      $('.navbar.navbar-default.navbar-fixed-top.animated.bounce').removeClass('fiftypacity');
+      console.log("Waypoints navbar 50% opacity triggered.");
+    }
+
+  },{offset:'10%'});
+
+////////////////////////////////// Waypoints  SCROLL PIC INTRO
+
+  $('#meWell').waypoint(function(direction){
+    //console.log("Hello");
+    if(direction === 'down'){
+      $('#avatar').addClass('zero-opacity');
+    }
+  },{offset:'50%'});
+
+///////////////////////////////// Waypoints SERVIVES OPACITY
+
+  $('#services').waypoint(function(direction){ //select services
+    if(direction === 'down'){
+      $('.panel.panel-default').toggleClass('well-zero'); //add %100 opacity when down
+      console.log("Waypoints touching Services");
+    }
+    if(direction === 'up'){ // go back to %0 opacity when up
+      $('.panel.panel-default').toggleClass('well-zero');
+    }
+  },{offset:'25%'});
+
+
+  ///////////////////////////////////Waypoints Photography Opacity
+
+  $('#photography').waypoint(function(direction){ //select services
+    if(direction === 'down'){
+      $('.photocontainer.well-zero').toggleClass('well-zero'); //add %100 opacity when down
+      console.log("Waypoints touching Photography");
+    }
+    if(direction === 'up'){ // go back to %0 opacity when up
+      $('.photocontainer').toggleClass('well-zero');
+    }
+  },{offset:'50%'});
+
 //CLICK SERVICES :SET TO ACTIVE
 
   $("#services-li").click(function(){
@@ -56,33 +106,18 @@ jQuery(document).ready(function($){
 
 
 
-//SCROLL TO SERVICES: SET TO ACTIVE
 
-  $('#photography-li').waypoint(function(event, direction){
-
-    if(direction === "down"){
-      $("#reachme-li, #services-li, #work-li, #home-li").removeClass("active");
-      $("#photography-li").addClass("active");
-    }
-    else{
-      $("#reachme-li, #services-li, #work-li, #home-li").removeClass("active");
-      $("#photography-li").addClass("active");
-    }
-  });
 
 
 
 //Play Gif on Hovers
 
-$(function(){
-    $('#bg').on( 'mouseenter', function() {
-         $(this).toggleClass('animated', 'static');
-    })
-})
+
+}); // End of Jquery closure
 
 
 
-});
+
 
 
 

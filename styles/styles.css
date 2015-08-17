@@ -2,9 +2,32 @@
 .well {
   border-radius: 0px; }
 
+/* Center  MY PHOTOS text */
+#myPhotos {
+  text-align: center;
+  transition: all 200ms ease-in; }
+
+#myWork {
+  text-align: center; }
+
+.well-zero {
+  opacity: 0; }
+
+.fiftypacity {
+  opacity: 0.935; }
+
+.panel.panel-default {
+  transition: all 200ms ease-in; }
+
+.photocontainer {
+  transition: all 300ms ease-in; }
+
 .workdiv {
   color: red;
   height: 300px; }
+
+.navbar.navbar-default.navbar-fixed-top.animated.bounce {
+  transition: all 250ms ease-in; }
 
 #home .welly {
   margin-bottom: 40px;
@@ -14,6 +37,13 @@
     text-align: center;
     margin-left: 25%;
     margin-right: 25%; }
+
+.img-circle {
+  opacity: 0;
+  transition: all 200ms ease-in; }
+
+.img-circle.center-block.zero-opacity {
+  opacity: 1; }
 
 /* ////////////// SERVICES STYLING /////////////////*/
 #services .well {
