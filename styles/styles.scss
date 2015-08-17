@@ -117,6 +117,34 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 ul{
   position-right:50px;
 }
+//FOOTER STYLING
+footer{
+  margin-top:2%;
+  padding-top:2%;
+  margin-left:-3%;
+  margin-right:-3%;
+  position-right:200px;
+  background-color:rgba(100,100,100,1.0);
+  background-size: 100% 130%;
+  color:black;
+  ul{
+    li{
+    display:inline;
+    margin-left:10px;
+    a{
+      color:black;
+    }
+    }
+  }
+}
+#chaseme{
+  margin-left:16%;  
+}
+#footer-copyright{
+  margin-right:28%;
+  text-align: center;
+}
+
 
 
 ///////////////////MEDIA QUERY FOR GIF /////////////////////
