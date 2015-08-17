@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css"/><!--///// CSS /////-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/> <!-- Font Awesome Glyphs -->
     <link data-require="animate.css@*" data-semver="3.2.0" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" /> <!--////// ANIMATE.CSS /////////-->
     <script src="/scripts/scripts.js"></script>
   </head>
@@ -30,7 +31,7 @@
             <a href="#photography">Photography</a>
           </li>
           <li id="reachme-li">
-            <a href="#myModal">Reach Me</a>
+            <a href="#myModal" data-toggle="modal">Reach Me</a>
           </li>
         </ul>
       </div><!-- /////////End Fluid Container -->
@@ -116,9 +117,9 @@
               <ul class="list-group">
                 <li class="list-group-item">Web Dev Work
                   <ul>
-                    <li class="list-group-item"><a href="https://developer.mozilla.org">Bloc Jams</a></li>
-                    <li class="list-group-item">Self Destructing Task Timer</li>
-                    <li class="list-group-item">Task List</li>
+                    <li class="list-group-item"><a target="_blank" href="http://bloc-jams-felice.herokuapp.com">Bloc Jams</a></li>
+                    <li class="list-group-item"><a target="_blank" href="http://tomato-tasks.herokuapp.com">Self Destructing Task Timer</a></li>
+                    <li class="list-group-item"><a target="_blank" href="http://tasklist-app.herokuapp.com">Task List</a></li>
                   </ul>
                 </li class="list-group-item"><!-- //////////END WEB DEV WORK /////////////////-->
                 <li class="list-group-item">Design/Animation
@@ -134,7 +135,34 @@
     </div><!-- END Container  -->
 
 
+        <!-- /////////////////////////// REACH ME SECTION //////////////////////////////-->
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Send Me A Message</h4>
+          </div>
+          <div class="modal-body">
+            <form action="https://getsimpleform.com/messages?form_api_token=8bb6a1885a7db3e6b0fa0e372c921277" method="post">
+              <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+              <!-- #2 -->
+              <input type='hidden' name='redirect_to' value='http://felicedeNigris.github.io/thank-you' />
+              <input type='text' name='name' placeholder='Your Full Name' />
+              <input type='email' name='email' placeholder='Your E-mail Address' />
+              <textarea name='message' placeholder='Write your message ...'></textarea>
+              <input type='submit' value='Send Message' />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
@@ -343,10 +371,26 @@
     </div> <!-- ////////////////////////END CONTAINER IMAGE GALLERY //////////////////-->
 
     <!--//////////////////////////////////////////////////////////////////////////////-->
+    <!-- ////////////////////////////////// FOOTER ///////////////////////////////////-->
     <footer>
-      <div class="container-fluid">
-        <p>©felicedenigris.com 2015</p>
-        <p>Developed by Felice DeNigris 👋≧◉ᴥ◉≦</p>
+      <div class="footer-container" id="footercontainer">
+        <div class="row">
+          <div class='col-md-4'>
+            <h4 id="chaseme">Follow me</h4>
+            <ul class="unstyled">
+              <li><a  target="_blank" class="fa fa-instagram" href='https://instagram.com/felicedenigris/'></a></li>
+              <li><a  target="_blank" class="fa fa-twitter" href='https://twitter.com/FeliDeNi'></a></li>
+              <li><a  target="_blank" class="fa fa-tumblr" href='http://fleechcoldpressed.tumblr.com/'></a></li>
+              <li><a  target="_blank" class="fa fa-pinterest"href='https://www.pinterest.com/felideni/'></a></li>
+              <li><a  target="_blank" class="fa fa-flickr"href='https://www.flickr.com/photos/felideni'></a></li>
+              <li><a  target="_blank" class="fa fa-linkedin" href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile'></a></li>
+            </ul>
+          </div><!-- /// end col ///-->
+          <div class='col-md-4' id="footer-copyright">
+            <p>Copyright &copy; 2015 felicedenigris.com </p>
+            <p>Coded with <span class="glyphicon glyphicon-heart"></span> by Felice DeNigris with endless refills of La Colombe coffee :P</p>
+          </div>
+        </div><!-- END ROW -->
       </div><!-- END CONTAINER -->
     </footer>
   </body>
