@@ -104,13 +104,60 @@ jQuery(document).ready(function($){
     $(this).attr("src", "../images/Intro_2k.gif");
   });
 
+  //SCROLL TO PHOTOGRAPHY: SET TO ACTIVE
+ 
+  $('#photography').waypoint(function(direction){
 
+    if(direction === "down"){
+      $("#reachme-li, #services-li, #work-li, #home-li").removeClass("active");
+      $("#photography-li").addClass("active");
+    }
+    if(direction === "up"){
+      $("#reachme-li, #services-li, #work-li, #home-li").removeClass("active");
+      $("#photography-li").addClass("active");
+    }
+  },{offset:'40%'});
+  //SCROLL TO HOME: SET TO ACTIVE
+ 
+  $('#home').waypoint(function(direction){
 
+    if(direction === "down"){
+      $("#reachme-li, #services-li, #work-li, #photography-li").removeClass("active");
+      $("#home-li").addClass("active");
+    }
+    if(direction === "up"){
+      $("#reachme-li, #services-li, #work-li, #photography-li").removeClass("active");
+      $("#home-li").addClass("active");
+    }
+  },{offset:'0%'});
+  //SCROLL TO SERVICES: SET TO ACTIVE
+ 
+  $('#services').waypoint(function(direction){
 
+    if(direction === "down"){
+      $("#reachme-li, #home-li, #work-li, #photography-li").removeClass("active");
+      $("#services-li").addClass("active");
+    }
+    if(direction === "up"){
+      $("#reachme-li, #home-li, #work-li, #photography-li").removeClass("active");
+      $("#services-li").addClass("active");
+    }
+  },{offset:'18%'});
+  //SCROLL TO WORK: SET TO ACTIVE
+ 
+  $('#work').waypoint(function(direction){
 
+    if(direction === "down"){
+      $("#reachme-li, #home-li, #services-li, #photography-li").removeClass("active");
+      $("#work-li").addClass("active");
+    }
+    if(direction === "up"){
+      $("#reachme-li, #home-li, #services-li, #photography-li").removeClass("active");
+      $("#work-li").addClass("active");
+    }
+  },{offset:'30%'});
 
-
-//Play Gif on Hovers
+ 
 
 
 }); // End of Jquery closure
