@@ -54,6 +54,17 @@ jQuery(document).ready(function($){
     }
   },{offset:'50%'});
 
+  ///////////////////////////////////Waypoints Work Opacity
+
+  $('#work').waypoint(function(direction){ //select services
+    if(direction === 'down'){
+      $('.workwrap.well-zero').toggleClass('well-zero'); //add %100 opacity when down
+      console.log("Waypoints touching Photography");
+    }
+    if(direction === 'up'){ // go back to %0 opacity when up
+      $('.workwrap').toggleClass('well-zero');
+    }
+  },{offset:'50%'});
 //CLICK SERVICES :SET TO ACTIVE
 
   $("#services-li").click(function(){

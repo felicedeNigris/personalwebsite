@@ -40,6 +40,12 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
   transition: all 200ms ease-in;
 }
 
+//work section transition
+
+.workwrap{
+  transition: all 200ms ease-in;
+}
+
 // photography transition
 
 .photocontainer{
@@ -48,7 +54,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 
 // WORK DIV Filler styles to  See if its all there//
 .workdiv{
-  color:red;
+  color:black;
   height:300px;
 }
 
@@ -317,6 +323,37 @@ footer{
 
     }
   }
+}
+
+///////////////////////////// CONTACT FORM STYLING
+.inputfield{
+  opacity:1;
+  border-radius:.25em;
+  border-width:1px;
+  margin-bottom:3%;
+  width:100%;
+  border:solid 1px;
+  border-color:C5E8C6;
+  background: -webkit-linear-gradient(white, rgb(250,250,250)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, rgb(250,250,250)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, rgb(250,250,250)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, rgb(250,250,250)); /* Standard syntax */
+    
+}
+textarea{
+  height:12%;
+}
+input{
+  height:28px;
+}
+#SendMessage{
+  border-radius:.25em;
+  border:solid 1px;
+  border-color:rgb(70,199,242);
+  background: linear-gradient(rgb(70,199,242), rgb(70,153,242)); /* Standard syntax */
+  box-shadow:1px 1px rgba(5,5,5,0.1);
+  font-weight:700;
+  color:white;
 }
 
 

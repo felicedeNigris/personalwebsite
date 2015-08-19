@@ -109,27 +109,28 @@
 
 
     <div class="container-fluid" id="work">
-
-      <div class="row">
-        <h2 id="myWork">My Work</h2>
-          <div class="welly">
-            <div class="workdiv">
-              <ul class="list-group">
-                <li class="list-group-item">Web Dev Work
-                  <ul>
-                    <li class="list-group-item"><a target="_blank" href="http://bloc-jams-felice.herokuapp.com">Bloc Jams</a></li>
-                    <li class="list-group-item"><a target="_blank" href="http://tomato-tasks.herokuapp.com">Self Destructing Task Timer</a></li>
-                    <li class="list-group-item"><a target="_blank" href="http://tasklist-app.herokuapp.com">Task List</a></li>
-                  </ul>
-                </li class="list-group-item"><!-- //////////END WEB DEV WORK /////////////////-->
-                <li class="list-group-item">Design/Animation
-                  <ul>
-
-                  </ul>
-              </ul> <!-- /////// END LIST GROUP //////////////-->
+      <div class="workwrap well-zero">
+        <div class="row">
+          <h2 id="myWork">My Work</h2>
+            <div class="welly">
+              <div class="workdiv">
+                <ul class="list-group">
+                  <li class="list-group-item"><p>Web Dev Work</p>
+                    <ul>
+                      <li class="list-group-item"><a target="_blank" href="http://bloc-jams-felice.herokuapp.com">Bloc Jams</a></li>
+                      <li class="list-group-item"><a target="_blank" href="http://tomato-tasks.herokuapp.com">Self Destructing Task Timer</a></li>
+                      <li class="list-group-item"><a target="_blank" href="http://tasklist-app.herokuapp.com">Task List</a></li>
+                    </ul>
+                  </li class="list-group-item"><!-- //////////END WEB DEV WORK /////////////////-->
+                  <li class="list-group-item"><p>Design/Animation</p>
+                    <ul>
+                      <li class="list-group-item"><p>Under Construction</p></li>
+                    </ul>
+                </ul> <!-- /////// END LIST GROUP //////////////-->
+              </div>
             </div>
-          </div>
-      </div> <!-- End Row -->
+        </div> <!-- End Row -->
+      </div><!-- end workwrap -->
 
 
     </div><!-- END Container  -->
@@ -150,15 +151,20 @@
             <form action="https://getsimpleform.com/messages?form_api_token=8bb6a1885a7db3e6b0fa0e372c921277" method="post">
               <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
               <!-- #2 -->
-              <input type='hidden' name='redirect_to' value='http://felicedeNigris.github.io/thank-you' />
-              <input type='text' name='name' placeholder='Your Full Name' />
-              <input type='email' name='email' placeholder='Your E-mail Address' />
-              <textarea name='message' placeholder='Write your message ...'></textarea>
-              <input type='submit' value='Send Message' />
+              <input class="inputfield" type='hidden' name='redirect_to' target="_blank" value='http://felicedenigris.github.io/thankyou/' />
+              <br>
+              <input class="inputfield" type='text' name='name' placeholder='Your Full Name'/>
+              <br>
+              <input class="inputfield" type='email' name='email' placeholder='Your E-mail Address' />
+              <br>
+              <textarea class="inputfield" name='message' placeholder='Write your message ...'></textarea>
+              <br>
+              <input class="button" id="SendMessage" type='submit' value='Send Message' />
             </form>
+
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -388,7 +394,7 @@
           </div><!-- /// end col ///-->
           <div class='col-md-4' id="footer-copyright">
             <p>Copyright &copy; 2015 felicedenigris.com </p>
-            <p>Coded with <span class="glyphicon glyphicon-heart"></span> by Felice DeNigris with endless refills of La Colombe coffee :P</p>
+            <p>Coded with <span class="glyphicon glyphicon-heart"></span> & endless refills of La Colombe coffee by Felice DeNigris :P</p>
           </div>
         </div><!-- END ROW -->
       </div><!-- END CONTAINER -->
