@@ -291,7 +291,22 @@ footer{
 
 @media (max-width:500px){
 
+  #services{
+    .well{
 
+      box-shadow: 0px 2px 15px 0px rgba(7,7,7, 0.08);;
+      background-image:url("../images/Wallpaper_600w_1000L.png");
+      background-repeat: repeat-x;
+      padding-bottom:10%;
+      //background-position: center center;
+      background-attachment:fixed;
+      background-size:60%;
+      height:300px;
+      padding-top:5%;
+      width:600px;
+
+    }
+  }
   #navigation{
     display:inline-flex;
     padding:0px;
