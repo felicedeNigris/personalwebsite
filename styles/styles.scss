@@ -298,13 +298,16 @@ footer{
       background-image:url("../images/Wallpaper_600w_1000L.png");
       background-repeat: repeat-x;
       padding-bottom:10%;
-      //background-position: center center;
       background-attachment:fixed;
       background-size:60%;
-      height:300px;
+      height:50%;
       padding-top:5%;
       width:600px;
 
+      .panel{
+      margin-top:15%;
+      }
+    
     }
   }
   #navigation{
