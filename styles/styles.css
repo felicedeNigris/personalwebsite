@@ -106,7 +106,9 @@ footer {
     background-image: url("../images/Intro_2k.gif");
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px; }
+    height: 500px;
+    background-size: contain; 
+  }
 
   .jumbotron {
     color: white;
