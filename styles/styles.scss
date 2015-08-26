@@ -344,6 +344,67 @@ footer{
   }
 }
 
+
+// IPHONE 6 IN PORTRAIT STYLING
+
+@media only screen  
+and (min-device-width:375px)
+and (max-device-width: 667px)
+{
+
+  #services{
+    .well{
+
+      box-shadow: 0px 2px 15px 0px rgba(7,7,7, 0.08);;
+      background-image:url("../images/Wallpaper_600w_1000L.png");
+      background-repeat: repeat;
+      padding-bottom:10%;
+      background-attachment:fixed;
+      background-size:60%;
+      height:50%;
+      padding-top:5%;
+      width:600px;
+
+      .panel{
+      margin-top:15%;
+      }
+    
+    }
+  }
+  #navigation{
+    display:inline-flex;
+    padding:0px;
+    margin:0px;
+    resize: 50%;
+    font-size:.9em;
+  }
+
+  .bg{
+    background-image:url("../images/Intro_500.gif");
+    background-repeat: no-repeat;
+    width:$fullwidth;
+    height:125px;
+    //padding-top:90%;
+    margin-top:20%;
+  }
+  .jumbotron {
+    
+    //height: 125px;
+    color:white;
+    text-shadow: $textshadowprops;
+    background:transparent;
+
+    #pronounced{
+      float:right;
+      color:black;
+      font-size:16px;
+      opacity:$introparency;
+      margin-top:-5%;
+
+    }
+  }
+}
+
 ///////////////////////////// CONTACT FORM STYLING
 .inputfield{
   opacity:1;
