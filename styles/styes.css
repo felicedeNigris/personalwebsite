@@ -1,0 +1,264 @@
+/* REMOVE ROUND EDGES FROM WELLS */
+.well {
+  border-radius: 0px; }
+
+/* Center  MY PHOTOS text */
+#myPhotos {
+  text-align: center;
+  transition: all 200ms ease-in; }
+
+#myWork {
+  text-align: center; }
+
+.well-zero {
+  opacity: 0; }
+
+.fiftypacity {
+  opacity: 0.935; }
+
+.panel.panel-default {
+  transition: all 200ms ease-in; }
+
+.workwrap {
+  transition: all 200ms ease-in; }
+
+.photocontainer {
+  transition: all 300ms ease-in; }
+
+.workdiv {
+  color: black;
+  height: 300px; }
+
+.navbar.navbar-default.navbar-fixed-top.animated.bounce {
+  transition: all 250ms ease-in; }
+
+#home .welly {
+  margin-bottom: 40px;
+  background-image: none;
+  background-color: rgba(127, 127, 127, 0); }
+  #home .welly h2 {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%; }
+
+.img-circle {
+  opacity: 0;
+  transition: all 200ms ease-in; }
+
+.img-circle.center-block.zero-opacity {
+  opacity: 1; }
+
+/* ////////////// SERVICES STYLING /////////////////*/
+#services .well {
+  box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
+  background-image: url("../images/Wallpaper.png");
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  padding-top: 5%; }
+  #services .well h3 {
+    text-align: center; }
+  #services .well .panel-body {
+    text-align: center; }
+    #services .well .panel-body img {
+      display: inline-block;
+      float: center;
+      width: 22%;
+      height: auto; }
+
+ul {
+  position-right: 50px; }
+
+footer {
+  margin-top: 2%;
+  padding-top: 2%;
+  margin-left: -3%;
+  margin-right: -3%;
+  position-right: 200px;
+  background-color: #646464;
+  background-size: 100% 130%;
+  color: black; }
+  footer ul li {
+    display: inline;
+    margin-left: 10px; }
+    footer ul li a {
+      color: black; }
+
+#chaseme {
+  margin-left: 16%; }
+
+#footer-copyright {
+  margin-right: 28%;
+  text-align: center; }
+
+@media (min-width: 1300px) {
+  body {
+    overflow-x: hidden; }
+    body #navigation {
+      float: right;
+      margin-right: 5%; }
+
+  .bg {
+    margin-top: 8%;
+    background-image: url("../images/Intro_2k.gif");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px; }
+
+  .jumbotron {
+    color: white;
+    text-shadow: 1px 1px 0 rgba(7, 7, 7, 0.08);
+    background: transparent; }
+    .jumbotron #pronounced {
+      float: right;
+      color: black;
+      opacity: 0.13;
+      font-size: 45px;
+      margin-top: -4%; } }
+@media (max-width: 1299px) {
+  body {
+    overflow-x: hidden; }
+    body #navigation {
+      float: right;
+      margin-right: 5%; }
+
+  .bg {
+    background-image: url("../images/Intro_1300.gif");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 325px;
+    margin-top: 10%; }
+
+  .jumbotron {
+    color: white;
+    text-shadow: 1px 1px 0 rgba(7, 7, 7, 0.08);
+    background: transparent; }
+    .jumbotron #pronounced {
+      float: right;
+      color: black;
+      opacity: 0.13;
+      margin-top: -4%; } }
+@media (max-width: 1000px) {
+  body {
+    overflow-x: hidden; }
+    body #navigation {
+      display: inline-flex;
+      padding: 0px;
+      margin: 0px; }
+
+  .bg {
+    background-image: url("../images/Intro_1k.gif");
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 10%; }
+
+  .jumbotron {
+    color: white;
+    text-shadow: 1px 1px 0 rgba(7, 7, 7, 0.08);
+    background: transparent; }
+    .jumbotron #pronounced {
+      float: right;
+      color: black;
+      font-size: 26px;
+      opacity: 0.13;
+      margin-top: -4%; } }
+@media (max-width: 732px) {
+  #navigation {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px; }
+
+  .bg {
+    background-image: url("../images/Intro_700.gif");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 175px;
+    margin-top: 10%; }
+
+  .jumbotron {
+    color: white;
+    text-shadow: 1px 1px 0 rgba(7, 7, 7, 0.08);
+    background: transparent; }
+    .jumbotron #pronounced {
+      float: right;
+      color: black;
+      font-size: 22px;
+      opacity: 0.13;
+      margin-top: -5%; } }
+@media (max-width: 500px) {
+  #services .well {
+    box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
+    background-image: url("../images/Wallpaper_600w_1000L.png");
+    background-repeat: repeat;
+    padding-bottom: 10%;
+    background-attachment: fixed;
+    background-size: 60%;
+    height: 50%;
+    padding-top: 5%;
+    width: 600px; }
+    #services .well .panel {
+      margin-top: 15%; }
+
+  #navigation {
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px;
+    resize: 50%;
+    font-size: .9em; }
+
+  .bg {
+    background-image: url("../images/Intro_500.gif");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 125px;
+    margin-top: 20%; }
+
+  .jumbotron {
+    color: white;
+    text-shadow: 1px 1px 0 rgba(7, 7, 7, 0.08);
+    background: transparent; }
+    .jumbotron #pronounced {
+      float: right;
+      color: black;
+      font-size: 16px;
+      opacity: 0.13;
+      margin-top: -5%; } }
+.inputfield {
+  opacity: 1;
+  border-radius: .25em;
+  border-width: 1px;
+  margin-bottom: 3%;
+  width: 100%;
+  border: solid 1px;
+  border-color: C5E8C6;
+  background: -webkit-linear-gradient(white, #fafafa);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #fafafa);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #fafafa);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #fafafa);
+  /* Standard syntax */ }
+
+textarea {
+  height: 12%; }
+
+input {
+  height: 28px; }
+
+#SendMessage {
+  border-radius: .25em;
+  border: solid 1px;
+  border-color: #46c7f2;
+  background: linear-gradient(#46c7f2, #4699f2);
+  /* Standard syntax */
+  box-shadow: 1px 1px rgba(5, 5, 5, 0.1);
+  font-weight: 700;
+  color: white; }
+
+/*# sourceMappingURL=styes.css.map */
