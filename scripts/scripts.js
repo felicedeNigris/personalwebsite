@@ -127,7 +127,7 @@ jQuery(document).ready(function($){
       $("#reachme-li, #services-li, #work-li, #home-li").removeClass("active");
       $("#photography-li").addClass("active");
     }
-  },{offset:'40%'});
+  },{offset:'20%'});
   //SCROLL TO HOME: SET TO ACTIVE
  
   $('#home').waypoint(function(direction){
