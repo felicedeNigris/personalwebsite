@@ -97,6 +97,13 @@ footer {
   margin-right: 28%;
   text-align: center; }
 
+.list-group-item li {
+  text-align: center; }
+
+.vimeoPassword {
+  margin-left: 10%;
+  width: 75%; }
+
 @media (min-width: 1300px) {
   body {
     overflow-x: hidden; }
@@ -108,6 +115,7 @@ footer {
     margin-top: 8%;
     background-image: url("../images/Intro_2k.gif");
     background-repeat: no-repeat;
+    background-size: contain;
     width: 100%;
     height: 500px; }
 
@@ -169,7 +177,10 @@ footer {
       color: black;
       font-size: 26px;
       opacity: 0.13;
-      margin-top: -4%; } }
+      margin-top: -4%; }
+
+  #photography {
+    margin-top: 50%; } }
 @media (max-width: 732px) {
   #navigation {
     display: inline-flex;
@@ -192,7 +203,14 @@ footer {
       color: black;
       font-size: 22px;
       opacity: 0.13;
-      margin-top: -5%; } }
+      margin-top: -5%; }
+
+  #photography {
+    margin-top: 70%; }
+
+  iframe {
+    width: 400px;
+    height: 250px; } }
 @media (max-width: 500px) {
   #services .well {
     box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
@@ -230,7 +248,14 @@ footer {
       color: black;
       font-size: 16px;
       opacity: 0.13;
-      margin-top: -5%; } }
+      margin-top: -5%; }
+
+  #photography {
+    margin-top: 70%; }
+
+  iframe {
+    width: 100%;
+    height: 75%; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
   #services .well {
     box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
@@ -244,7 +269,10 @@ footer {
     padding-top: 5%;
     width: 100%; }
     #services .well .panel {
-      margin-top: 15%; } }
+      margin-top: 15%; }
+
+  #photography {
+    margin-top: 42%; } }
 .inputfield {
   opacity: 1;
   border-radius: .25em;

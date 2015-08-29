@@ -156,8 +156,20 @@ footer{
 }
 
 
+//////////  DEMO REEL SECTION /////////////////////
 
-///////////////////MEDIA QUERY FOR GIF /////////////////////
+.list-group-item{
+  li{
+    text-align:center
+  }
+}
+
+.vimeoPassword{
+  margin-left:10%;
+  width:75%;
+}
+
+///////////////////MEDIA QUERIES /////////////////////
 
 @media (min-width:1300px){
 
@@ -173,6 +185,7 @@ footer{
     margin-top:8%;
     background-image:url("../images/Intro_2k.gif");
     background-repeat: no-repeat;
+    background-size:contain;
     width:$fullwidth;
     height: 500px;
   }
@@ -259,6 +272,9 @@ footer{
     
     }
   }
+    #photography{
+    margin-top:50%;
+  }
 }
 // Can set a range
 @media (max-width:732px){
@@ -290,6 +306,14 @@ footer{
 
     }
   }
+  #photography{
+    margin-top:70%;
+  }
+ iframe{
+  width:400px;
+  height:250px;
+  }
+ 
 }
 
 
@@ -346,6 +370,16 @@ footer{
 
     }
   }
+
+  #photography{
+    margin-top:70%;
+  }
+
+//dyanmically change video size
+  iframe{
+  width:100%;
+  height:75%;
+  }
 }
 
 //IPHONE STYLING 
@@ -371,6 +405,10 @@ footer{
       }
     
     }
+  }
+
+  #photography{
+    margin-top:42%;
   }
 }
 

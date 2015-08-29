@@ -168,7 +168,12 @@ jQuery(document).ready(function($){
     }
   },{offset:'30%'});
 
- 
+
+ /* //Change iframe Video Container Size dynamically
+
+  $('.myIframe').css('width', $(window).width()+(-200)+ 'px');
+  $('.myIframe').css('height', $('myIframe').css('width')/(1.77)+ 'px');
+ */
 
 
 }); // End of Jquery closure
