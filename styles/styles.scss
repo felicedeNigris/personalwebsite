@@ -87,6 +87,14 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
   transition: all 200ms ease-in;
 }
 
+#meNav{
+  border-radius:25px;
+  float:left;
+  display:inline;
+  position:fixed;
+  left:10px;
+  margin-top:-.9%;
+}
 
 .img-circle.center-block.zero-opacity{
   opacity:1;
@@ -380,6 +388,10 @@ footer{
   width:100%;
   height:75%;
   }
+
+  #meNav{
+  display:none;
+  }
 }
 
 //IPHONE STYLING 
@@ -435,14 +447,19 @@ textarea{
 input{
   height:28px;
 }
+
 #SendMessage{
-  border-radius:.25em;
-  border:solid 1px;
-  border-color:rgb(70,199,242);
-  background: linear-gradient(rgb(70,199,242), rgb(70,153,242)); /* Standard syntax */
-  box-shadow:1px 1px rgba(5,5,5,0.1);
-  font-weight:700;
-  color:white;
+   border-radius:.25em;
+   border:solid 1px;
+   border-color:rgb(70,199,242);
+   background: linear-gradient(rgb(70,199,242), rgb(70,153,242)); /* Standard syntax */
+   box-shadow:1px 1px rgba(5,5,5,0.1);
+   font-weight:500;
+   color:white;
+   padding: 5px 12px 27px 12px;
 }
 
+ #SendMessage:hover{
+  background: linear-gradient(rgb(59,174,212), rgb(40,153,191)); /* Standard syntax */
+  }
 

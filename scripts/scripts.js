@@ -97,6 +97,12 @@ jQuery(document).ready(function($){
     $("#home-li").addClass("active");
   });
 
+//CLICK NAV PIC: SET HOME TO ACTIVE
+$("#meNav").click(function(){
+  $("#reachme-li, #services-li, #work-li, #photography-li").removeClass("active");
+  $("#home-li").addClass("active");
+});
+
 //CLICK PHOTOGRAPHY :SET TO ACTIVE
 
   $("#photography-li").click(function(){
