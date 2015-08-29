@@ -168,12 +168,84 @@ jQuery(document).ready(function($){
     }
   },{offset:'30%'});
 
+  ///////////////////////// CHANGE PAGE ON DIRECTION DOWN ////////////////////////////
 
- /* //Change iframe Video Container Size dynamically
 
-  $('.myIframe').css('width', $(window).width()+(-200)+ 'px');
-  $('.myIframe').css('height', $('myIframe').css('width')/(1.77)+ 'px');
- */
+  //from work to photography
+
+  var $work = $('#work');
+
+  $work.waypoint(function (direction) {
+    if (direction == 'down') {
+    // Do something when scrolling down
+    console.log("hey i scrolled down from work section");
+    $("#reachme-li, #home-li, #services-li, #work-li").removeClass("active");
+      $("#photography-li").addClass("active");
+    }
+  }, { offset: '-70%' });
+
+  //from services to work
+
+  $('#services').waypoint(function (direction) {
+    if (direction == 'down') {
+    // Do something when scrolling down
+    console.log("hey i scrolled down from services section");
+    $("#reachme-li, #home-li, #photography-li, #services-li").removeClass("active");
+    $("#work-li").addClass("active");
+    }
+  }, { offset: '-45%' });
+
+  //from home to services
+
+  $('#home').waypoint(function (direction) {
+    if (direction == 'down') {
+    // Do something when scrolling down
+    console.log("hey i scrolled down from home section");
+    $("#reachme-li, #home-li, #photography-li, #work-li").removeClass("active");
+    $("#services-li").addClass("active");
+    }
+  }, { offset: '-12%' });
+
+
+  ///////////////////////// CHANGE PAGE ON DIRECTION UP ////////////////////////////
+
+
+  //from work to photography
+
+  var $work = $('#work');
+
+  $work.waypoint(function (direction) {
+    if (direction == 'up') {
+    // Do something when scrolling down
+    console.log("hey i scrolled UP from work section");
+    $("#reachme-li, #home-li, #photography-li, #work-li").removeClass("active");
+      $("#services-li").addClass("active");
+    }
+  }, { offset: '50%' });
+
+  //from services to work
+
+  $('#services').waypoint(function (direction) {
+    if (direction == 'up') {
+    // Do something when scrolling down
+    console.log("hey i scrolled UP from services section");
+    $("#reachme-li, #work-li, #photography-li, #services-li").removeClass("active");
+    $("#home-li").addClass("active");
+    }
+  }, { offset: '35%' });
+
+  //from home to services
+
+  $('#photography').waypoint(function (direction) {
+    if (direction == 'up') {
+    // Do something when scrolling down
+    console.log("hey i scrolled UP from home section");
+    $("#reachme-li, #home-li, #photography-li, #services-li").removeClass("active");
+    $("#work-li").addClass("active");
+    }
+  }, { offset: '24%' });
+
+
 
 
 }); // End of Jquery closure
