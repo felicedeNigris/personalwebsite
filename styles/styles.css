@@ -283,7 +283,10 @@ footer {
       margin-top: 15%; }
 
   #photography {
-    margin-top: 42%; } }
+    margin-top: 42%; }
+
+  #meNav {
+    display: none; } }
 .inputfield {
   opacity: 1;
   border-radius: .25em;
