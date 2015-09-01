@@ -105,6 +105,9 @@ footer {
   margin-right: 28%;
   text-align: center; }
 
+#socialmediaicons {
+  margin-left: 4em; }
+
 .list-group-item li {
   text-align: center; }
 
@@ -324,5 +327,37 @@ input {
 #SendMessage:hover {
   background: linear-gradient(#3baed4, #2899bf);
   /* Standard syntax */ }
+
+ul {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0; }
+
+ul li {
+  list-style: none;
+  margin-bottom: 25px; }
+
+ul li img {
+  cursor: pointer; }
+
+.modal-content {
+  width: 70em; }
+
+.modal-dialog {
+  margin-top: 10%;
+  margin-left: 20%; }
+
+.navbar-fixed-top {
+  height: 20px; }
+
+.controls {
+  width: 50px;
+  display: block;
+  font-size: 11px;
+  padding-top: 8px;
+  font-weight: bold; }
+
+.next {
+  float: right;
+  text-align: right; }
 
 /*# sourceMappingURL=styles.css.map */

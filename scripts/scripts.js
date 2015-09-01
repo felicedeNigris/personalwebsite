@@ -251,6 +251,81 @@ $("#meNav").click(function(){
     }
   }, { offset: '24%' });
 
+//// MODAL PHOTO FEATURE
+
+$('.img-responsive').on('click',function(){
+  var src = $(this).attr('src');
+  var img = '<img src="' + src + '" class="img-responsive"/>';
+  //Start of new code
+  var index = $(this).parent('li').index();
+  var html = '';
+  html += img;
+  html += '<div style="height:25px;clear:both;display:block;">';
+  html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
+  html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+  html += '</div>';
+  //End of new code
+  $('#photoModal').modal();
+  $('#photoModal').on('shown.bs.modal', function(){
+      $('#photoModal .modal-body').html(html);
+      $('a.controls').trigger('click'); //hide next-prev on last photo
+  });
+  $('#photoModal').on('hidden.bs.modal', function(){
+      $('#photoModal .modal-body').html('');
+
+  });
+});
+ $(document).on('click', 'a.controls', function(){
+  var index = $(this).attr('href');
+  var src = $('ul.row li:nth-child('+ index +') img').attr('src');
+  $('.modal-body img').attr('src', src);
+  var newPrevIndex = parseInt(index) - 1;
+  var newNextIndex = parseInt(newPrevIndex) + 2;
+   
+  if($(this).hasClass('previous')){
+      $(this).attr('href', newPrevIndex);
+      $('a.next').attr('href', newNextIndex);
+  }else{
+      $(this).attr('href', newNextIndex);
+      $('a.previous').attr('href', newPrevIndex);
+  }
+    var total = $('ul.row li').length + 1;
+  //hide next button
+  if(total === newNextIndex){
+      $('a.next').hide();
+  }else{
+      $('a.next').show()
+  }
+  //hide previous button
+  if(newPrevIndex === 0){
+      $('a.previous').hide();
+  }else{
+      $('a.previous').show()
+  }
+  return false;
+  });
+
+
+
+// Right Click Protection 
+
+ function nocontext(e) {
+
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+
+        if (clickedTag == "IMG") {
+
+            alert(alertMsg);
+
+            return false;
+
+        }
+
+    }
+
+    var alertMsg = "Images are protected under copywright. ©Felice DeNigris";
+
+    document.oncontextmenu = nocontext;
 
 
 

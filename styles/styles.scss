@@ -164,6 +164,9 @@ footer{
   margin-right:28%;
   text-align: center;
 }
+#socialmediaicons{
+  margin-left:4em;
+}
 
 
 //////////  DEMO REEL SECTION /////////////////////
@@ -465,7 +468,47 @@ input{
    padding: 5px 12px 27px 12px;
 }
 
- #SendMessage:hover{
+#SendMessage:hover{
   background: linear-gradient(rgb(59,174,212), rgb(40,153,191)); /* Standard syntax */
-  }
+}
+
+ul {
+        padding:0 0 0 0;
+        margin:0 0 0 0;
+    }
+
+ul li {
+    list-style:none;
+    margin-bottom:25px;
+}
+
+ul li img {
+    cursor: pointer;
+}
+
+.modal-content {
+    width: 70em;
+
+}
+.modal-dialog {
+  margin-top: 10%;
+  margin-left: 20%;
+}
+.navbar-fixed-top{
+  height:20px;
+}
+
+//Modal Photo Next-Prev styling
+
+.controls{
+    width:50px;
+    display:block;
+    font-size:11px;
+    padding-top:8px;
+    font-weight:bold;
+}
+.next {
+    float:right;
+    text-align:right;
+}
 
