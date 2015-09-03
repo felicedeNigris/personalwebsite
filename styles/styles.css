@@ -403,4 +403,10 @@ ul li img {
   float: right;
   text-align: right; }
 
+.container-fluid {
+  overflow-x: hidden; }
+
+.container {
+  width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,6 @@
 3.4.16 (Selective Steve)
-13accab64616f28a3788f140265371c1af000c84
-o:Sass::Tree::RootNode:@template"w%// Sass Global Variables
+ae629ee90c12b26fdc35e71119582687de28b7ba
+o:Sass::Tree::RootNode:@template"¼%// Sass Global Variables
 
 $introparency:0.13;
 $fullwidth:100%;
@@ -581,7 +581,13 @@ ul li img {
     text-align:right;
 }
 
-:@children[Po:Sass::Tree::CommentNode
+.container-fluid{
+  overflow-x:hidden;
+}
+.container{
+  width:100%;
+}
+:@children[Ro:Sass::Tree::CommentNode
 :
 @type:silent;[ :@options{ :
 @linei:@value[" /* Sass Global Variables */o:Sass::Tree::VariableNode:
@@ -1857,5 +1863,12 @@ right;=o;	;o;;i;iB;@;@;@ão;6;7;8;["text-align;9o;	;o;;i
 ;"
 right;=o;	;o;;i;iC;@;@;@ô;@
 ;iA;:i ;o;	;o;;i;iA;@;@;o;;i;iA;>o;?;@[o;A;@[o;B;C0;@[o;J;"	next;"0;iA;"0;Eo;;{ ;iA;o;	;o;;i;i;0;0;o;;i;i;iA;"0;iA;Fo;	;@þ;@;@;o;;i;iA;GT;H["
-.next;@
+.nexto;5;[o;6;7;8;["overflow-x;9o;	;o;;i;iG;@;@;o;;i;iG;[ ;@
+;iG;:i ;o;	;@;@;@;o;;i;iG;o;!;iG;o;	;o;;i;iG;@;@;o;;i;iG;o;;;	;<;@
+;"hidden;=o;	;o;;i;iG;@;@;@;@
+;iF;:i ;o;	;o;;i;iF;@;@;o;;i;iF;>o;?;@[o;A;@[o;B;C0;@[o;J;"container-fluid;"0;iF;"0;Eo;;{ ;iF;o;	;o;;i;i;0;0;o;;i;i;iF;"0;iF;Fo;	;@%;@;@;o;;i;iF;GT;H[".container-fluido;5;[o;6;7;8;["
+width;9o;	;o;;i;iJ;@;@;o;;i;iJ;[ ;@
+;iJ;:i ;o;	;@>;@;@;o;;i;iJ;o;!;iJ;o;	;o;;i;iJ;@;@;o;;i;iJ;o;;;	;<;@
+;"	100%;=o;	;o;;i;iJ;@;@;@B;@
+;iI;:i ;o;	;o;;i;iI;@;@;o;;i;iI;>o;?;@[o;A;@[o;B;C0;@[o;J;"container;"0;iI;"0;Eo;;{ ;iI;o;	;o;;i;i;0;0;o;;i;i;iI;"0;iI;Fo;	;@L;@;@;o;;i;iI;GT;H[".container;@
 ;i;o;	;o;;i;i;@;@;o;;i;i;GT
