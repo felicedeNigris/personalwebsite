@@ -1,5 +1,5 @@
 #photography {
-  margin-top: 30%; }
+  margin-top: 10%; }
 
 /* REMOVE ROUND EDGES FROM WELLS */
 .well {
@@ -11,7 +11,8 @@
   transition: all 200ms ease-in; }
 
 #myWork {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2%; }
 
 .well-zero {
   opacity: 0; }
@@ -23,7 +24,8 @@
   transition: all 200ms ease-in; }
 
 .workwrap {
-  transition: all 200ms ease-in; }
+  transition: all 200ms ease-in;
+  background-color: gainsboro; }
 
 .photocontainer {
   transition: all 300ms ease-in; }
@@ -95,7 +97,7 @@ footer {
       color: black; }
 
 #chaseme {
-  margin-left: 16%; }
+  margin-left: 70px; }
 
 #footer-copyright {
   margin-right: 28%;
@@ -187,7 +189,7 @@ footer {
       margin-top: -4%; }
 
   #photography {
-    margin-top: 50%; } }
+    margin-top: 13%; } }
 @media (max-width: 732px) {
   #navigation {
     display: inline-flex;
@@ -404,5 +406,13 @@ ul li img {
 
 .container {
   width: 100%; }
+
+#worktitles {
+  text-align: center; }
+
+.webdev-img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=styles.css.map */

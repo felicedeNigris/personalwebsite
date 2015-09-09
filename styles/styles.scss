@@ -7,7 +7,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 
 // Add a margin above photography section
 #photography{
-  margin-top:30%;
+  margin-top:10%;
 }
 /* REMOVE ROUND EDGES FROM WELLS */ 
  .well{
@@ -23,6 +23,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 // CENTER MY WORK TEXT ///
 #myWork{
   text-align:center;
+  margin-bottom:2%;
 }
 
 // Zero opacity to SERVICES WELL 
@@ -47,6 +48,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 
 .workwrap{
   transition: all 200ms ease-in;
+  background-color:rgb(220,220,220);
 }
 
 // photography transition
@@ -151,7 +153,7 @@ footer{
   }
 }
 #chaseme{
-  margin-left:16%;  
+  margin-left:70px;  
 }
 #footer-copyright{
   margin-right:28%;
@@ -279,7 +281,7 @@ footer{
     }
   }
     #photography{
-    margin-top:50%;
+    margin-top:13%;
   }
 }
 // Can set a range
@@ -579,4 +581,13 @@ ul li img {
 }
 .container{
   width:100%;
+}
+#worktitles{
+  text-align: center;
+}
+
+.webdev-img{
+  display:block;
+  max-width:100%;
+  height:auto;
 }
