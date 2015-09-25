@@ -1,5 +1,5 @@
 3.4.16 (Selective Steve)
-fcde601a61bb565008c8cc30312601e7c34e128f
+6440e784d1a97757fc561017d9f9f21bdc12c283
 o:Sass::Tree::RootNode:@template"n(// Sass Global Variables
 
 
@@ -179,7 +179,7 @@ footer{
 }
 .flex-video.widescreen:hover{
   .vimeoPassword{
-  opacity:1.0;
+  opacity:0.5;
   }
 }
 ///////////////////MEDIA QUERIES /////////////////////
@@ -648,7 +648,7 @@ ul li img {
 ;i	:@guarded0:@source_rangeo:Sass::Source::Range	:@start_poso:Sass::Source::Position:@offseti;i	:@importero: Sass::Importers::Filesystem:@real_root"2/Users/felice/Development/my_portfolio/styles:
 @root"2/Users/felice/Development/my_portfolio/styles:@same_name_warningso:Set:
 @hash{ :
-@file">/Users/felice/Development/my_portfolio/styles/styles.scss:@end_poso;;i;i	:
+@file"styles.scss:@end_poso;;i;i	:
 @expro: Sass::Script::Tree::Literal	:@filename@;i	;o;	;o;;i;i	;@;@;o;;i;i	;o: Sass::Script::Value::Number
 ;@
 :@denominator_units[ :@original"	0.13;f0.13 p¤:@numerator_units[ o;;"fullwidth;[ ;0;@
@@ -964,7 +964,7 @@ width;9o;	;o;;i;i¯;@;@;o;;i;i¯;[ ;@
 ;"0;=o;	;o;;i;i°;@;@;@+;@
 ;i­;:i ;o;	;o;;i;i­;@;@;o;;i;i­;>o;?;@[o;A;@[o;B;C0;@[o;D;"vimeoPassword;"0;i­;"0;Eo;;{ ;i­;o;	;o;;i;i;0;0;o;;i;i;i­;"0;i­;Fo;	;@5;@;@;o;;i;i­;GT;H[".vimeoPasswordo;5;[o;5;[o;6;7;8;["opacity;9o;	;o;;i;i´;@;@;o;;i;i´;[ ;@
 ;i´;:i ;o;	;@P;@;@;o;;i;i´;o;!;i´;o;	;o;;i;i´;@;@;o;;i;i´;o;;;	;<;@
-;"1.0;=o;	;o;;i;i´;@;@;@T;@
+;"0.5;=o;	;o;;i;i´;@;@;@T;@
 ;i³;:i ;o;	;o;;i;i³;@;@;o;;i;i³;>o;?;@[o;A;@[o;B;C0;@[o;D;"vimeoPassword;"0;i³;"0;Eo;;{ ;i³;o;	;o;;i;i;0;0;o;;i;i;i³;"0;i³;Fo;	;@^;@;@;o;;i;i³;GT;H[".vimeoPassword;@
 ;i²;:i ;o;	;o;;i;i²;@;@;o;;i";i²;>o;?;@[o;A;@[o;B;C0;@[o;D;"flex-video;"0;i²o;D;"widescreen;"0;i²o:Sass::Selector::Pseudo:@selector0:@syntactic_type:
 class;"

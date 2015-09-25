@@ -115,7 +115,7 @@ footer {
   opacity: 0; }
 
 .flex-video.widescreen:hover .vimeoPassword {
-  opacity: 1.0; }
+  opacity: 0.5; }
 
 @media (min-width: 1300px) {
   body {
