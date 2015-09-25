@@ -4,7 +4,6 @@
 
 jQuery(document).ready(function($){
 
-
   ////////////////////////////////// Waypoints NAVBAR SCROLL DOWN OPACITY
 
   $('#meWell').waypoint(function(direction){ //when Home area is in focus
