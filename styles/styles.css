@@ -1,3 +1,6 @@
+.cloak {
+  display: none; }
+
 #photography {
   margin-top: 10%; }
 
@@ -10,10 +13,6 @@
   text-align: center;
   transition: all 200ms ease-in; }
 
-#myWork {
-  text-align: center;
-  margin-bottom: 2%; }
-
 .well-zero {
   opacity: 0; }
 
@@ -25,7 +24,7 @@
 
 .workwrap {
   transition: all 200ms ease-in;
-  background-color: gainsboro; }
+  background-color: #797979; }
 
 .photocontainer {
   transition: all 300ms ease-in; }
@@ -100,8 +99,9 @@ footer {
   margin-left: 70px; }
 
 #footer-copyright {
-  margin-right: 28%;
-  text-align: center; }
+  margin-right: auto;
+  text-align: center;
+  margin-left: auto; }
 
 #socialmediaicons {
   margin-left: 4em; }
@@ -111,7 +111,11 @@ footer {
 
 .vimeoPassword {
   margin-left: 10%;
-  width: 75%; }
+  width: 75%;
+  opacity: 0; }
+
+.flex-video.widescreen:hover .vimeoPassword {
+  opacity: 1.0; }
 
 @media (min-width: 1300px) {
   body {
@@ -221,6 +225,12 @@ footer {
     width: 400px;
     height: 250px; } }
 @media (max-width: 500px) {
+  #footer-copyright {
+    font-size: .7em; }
+
+  * {
+    overflow-x: hidden; }
+
   #services .well {
     box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
     background-image: url("../images/Wallpaper_600w_1000L.png");
@@ -268,6 +278,15 @@ footer {
   #meNav {
     display: none; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #footer-copyright {
+    font-size: .7em;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%; }
+
+  * {
+    overflow-x: hidden; }
+
   #services .well {
     box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
     background-image: url("../images/Wallpaper_600w_1000L.png");
@@ -288,6 +307,15 @@ footer {
   #meNav {
     display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  #footer-copyright {
+    font-size: .7em;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%; }
+
+  * {
+    overflow-x: hidden; }
+
   #services .well {
     box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
     background-image: url("../images/Wallpaper_600w_1000L.png");
@@ -308,6 +336,15 @@ footer {
   #meNav {
     display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #footer-copyright {
+    font-size: .7em;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%; }
+
+  * {
+    overflow-x: hidden; }
+
   #services .well {
     box-shadow: 0px 2px 15px 0px rgba(7, 7, 7, 0.08);
     background-image: url("../images/Wallpaper_600w_1000L.png");
@@ -408,7 +445,11 @@ ul li img {
   width: 100%; }
 
 #worktitles {
-  text-align: center; }
+  margin-top: 7%;
+  text-align: center;
+  font-size: 1.6em;
+  color: whitesmoke;
+  drop-shadow: 1px; }
 
 .webdev-img {
   display: block;

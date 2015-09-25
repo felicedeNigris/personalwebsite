@@ -5,6 +5,9 @@ $introparency:0.13;
 $fullwidth:100%;
 $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 
+.cloak{
+  display:none;
+}
 // Add a margin above photography section
 #photography{
   margin-top:10%;
@@ -18,12 +21,6 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 #myPhotos{
   text-align:center;
   transition: all 200ms ease-in;
-}
-
-// CENTER MY WORK TEXT ///
-#myWork{
-  text-align:center;
-  margin-bottom:2%;
 }
 
 // Zero opacity to SERVICES WELL 
@@ -48,7 +45,7 @@ $textshadowprops: 1px 1px 0 rgba(7,7,7, 0.08);
 
 .workwrap{
   transition: all 200ms ease-in;
-  background-color:rgb(220,220,220);
+  background-color:#797979;
 }
 
 // photography transition
@@ -156,8 +153,9 @@ footer{
   margin-left:70px;  
 }
 #footer-copyright{
-  margin-right:28%;
+  margin-right:auto;
   text-align: center;
+  margin-left:auto;
 }
 #socialmediaicons{
   margin-left:4em;
@@ -175,8 +173,13 @@ footer{
 .vimeoPassword{
   margin-left:10%;
   width:75%;
+  opacity:0;
 }
-
+.flex-video.widescreen:hover{
+  .vimeoPassword{
+  opacity:1.0;
+  }
+}
 ///////////////////MEDIA QUERIES /////////////////////
 
 @media (min-width:1300px){
@@ -327,6 +330,14 @@ footer{
 
 @media (max-width:500px){
 
+  #footer-copyright {
+    font-size: .7em;
+  }
+
+  *{
+    overflow-x:hidden;
+  }
+
   #services{
     .well{
 
@@ -399,6 +410,17 @@ footer{
 //iphone6
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) { 
 
+  #footer-copyright {
+   font-size: .7em;
+   padding-left:10%;
+   padding-right:10%;
+   margin-top:10%;   
+  }
+
+  *{
+    overflow-x:hidden;
+  }
+
   #services{
     .well{
 
@@ -432,6 +454,17 @@ footer{
 //iphone5
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
 
+  #footer-copyright {
+   font-size: .7em;
+   padding-left:10%;
+   padding-right:10%;
+   margin-top:10%;   
+  }
+
+  *{
+    overflow-x:hidden;
+  }
+
   #services{
     .well{
 
@@ -464,6 +497,17 @@ footer{
 
 //iphone4
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) { 
+
+  #footer-copyright {
+   font-size: .7em;
+   padding-left:10%;
+   padding-right:10%;
+   margin-top:10%;
+  }
+
+  *{
+    overflow-x:hidden;
+  }
 
   #services{
     .well{
@@ -583,7 +627,11 @@ ul li img {
   width:100%;
 }
 #worktitles{
+  margin-top:7%;
   text-align: center;
+  font-size:1.6em;
+  color:whitesmoke;
+  drop-shadow:1px
 }
 
 .webdev-img{
